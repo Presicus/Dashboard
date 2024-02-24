@@ -19,7 +19,7 @@ class Camera(ThreadWithStop):
         self.lane_detect=Threadcamera_lane_detect(self.data_queue1,self.data_queue_send,)
         self.object_detect=Threadcamera_object_detect(self.data_queue2,self.data_queue_send)
         self.lane_detect.start()
-        self.object_detect.start()
+        # self.object_detect.start()
         data = {"action": "startEngine", "value": True}
         self.pipeSend.send(data)
         while True:
