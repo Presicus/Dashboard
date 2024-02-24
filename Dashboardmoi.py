@@ -29,7 +29,7 @@
 import sys
 
 # Append the current directory to the Python path
-sys.path.append(r"C:\Users\PC\Desktop\Work\Github\Bosch-Mobility\Dashboard")
+sys.path.append(".")
 
 # Import required modules
 from multiprocessing import Pipe
@@ -43,7 +43,7 @@ piperecvFromUI, pipesendFromUI = Pipe(duplex=False)
 piperecvFromHandler, pipesendFromHandler = Pipe(duplex=False)
 
 # Load data from a JSON file
-with open("/setup/PairingData.json", "r") as file:
+with open("setup/PairingData.json", "r") as file:
     data = json.load(file)
 
 # Extract values from the loaded data

@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r"C:\Users\PC\Desktop\Work\Github\Bosch_mobility\Dashboard")
+sys.path.append(r"C:\Users\PC\Desktop\Bosch_mobility\Dashboard")
 from CarCommunication.threadwithstop import ThreadWithStop
 from CameraHandler.threadCameralanedetect import Threadcamera_lane_detect
 from CameraHandler.threadCameraobjectdetect import Threadcamera_object_detect
